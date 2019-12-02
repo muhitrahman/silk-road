@@ -1,0 +1,579 @@
+/* ============================= */
+/* ==== Animation Durations ==== */
+/* ============================= */
+.dur1100{animation-duration:1100ms;}
+.dur1000{animation-duration:1000ms;}
+/* ========================== */
+/* ==== Animation Delays ==== */
+/* ========================== */
+.del0{-webkit-animation-delay:0ms;animation-delay:0ms;}
+.del40{-webkit-animation-delay:40ms;animation-delay:40ms;}
+.del50{-webkit-animation-delay:50ms;animation-delay:50ms;}
+.del80{-webkit-animation-delay:80ms;animation-delay:80ms;}
+.del100{-webkit-animation-delay:100ms;animation-delay:100ms;}
+.del150{-webkit-animation-delay:150ms;animation-delay:150ms;}
+.del200{-webkit-animation-delay:200ms;animation-delay:200ms;}
+.del300{-webkit-animation-delay:300ms;animation-delay:300ms;}
+.del400{-webkit-animation-delay:400ms;animation-delay:400ms;}
+.del500{-webkit-animation-delay:500ms;animation-delay:500ms;}
+.del600{-webkit-animation-delay:600ms;animation-delay:600ms;}
+.del700{-webkit-animation-delay:700ms;animation-delay:700ms;}
+.del800{-webkit-animation-delay:800ms;animation-delay:800ms;}
+.del900{-webkit-animation-delay:900ms;animation-delay:900ms;}
+.del1000{-webkit-animation-delay:1000ms;animation-delay:1000ms;}
+.del1100{-webkit-animation-delay:1100ms;animation-delay:1100ms;}
+.del1400{-webkit-animation-delay:1100ms;animation-delay:1400ms;}
+/* ======================== */
+/* ==== View Animation ==== */
+/* ======================== */
+.fade.ng-enter {
+  transition: opacity 220ms linear 220ms;
+  opacity: 0;
+}
+.fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.fade.ng-leave {
+  transition: opacity 220ms;
+  opacity: 1;
+}
+.fade.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+@keyframes slideUp50 {
+  0% {
+    transform: translate3d(0, 50px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideUp50 {
+  opacity: 1;
+  animation-name: slideUp50;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+/* ========================= */
+/* ==== Text Animations ==== */
+/* ========================= */
+@keyframes animateBigText {
+  0% {
+    opacity: 0;
+    transform: translate3d(-10px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animateBigText {
+  animation-name: animateBigText;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+@keyframes animateSmallText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animateSmallText {
+  animation-name: animateSmallText;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+.big-text {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+.small-text {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+/* =========================== */
+/* ==== Fade In Animation ==== */
+/* =========================== */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn-dur400 {
+  animation-name: fadeIn;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+.fadeIn-dur600 {
+  animation-name: fadeIn;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+.fadeIn-dur800 {
+  animation-name: fadeIn;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+/* =========================== */
+/* ==== Fade Out Animation ==== */
+/* =========================== */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fadeOut-dur600 {
+  opacity:1;
+  animation-name: fadeOut;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+/* ========================== */
+/* ==== Loader Animation ==== */
+/* ========================== */
+#loader {
+  height: 2px;
+  transform: translate3d(-100%, 0, 0);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+}
+@keyframes animateLoader {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animateLoader-dur3000 {
+  animation-name: animateLoader;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.animateLoader-dur2000 {
+  opacity: 1;
+  animation-name: animateLoader;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+/* ========================= */
+/* ==== Home Animations ==== */
+/* ========================= */
+@keyframes fadeInUp {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 200%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp-dur1000 {
+  animation-name: fadeInUp;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, calc(-100% + 100vw/12), 0);
+  }
+}
+.fadeOutUp-dur1000 {
+  opacity: 1;
+  animation-name: fadeOutUp;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+/* ========================== */
+/* ==== About Animations ==== */
+/* ========================== */
+#img-5by5-16.first,
+#img-5by5-16-clone.second {
+  animation-delay: 0ms;
+  transform: translate3d(0, 0, 0);
+}
+#img-5by5-16.second,
+#img-5by5-16-clone.first {
+  animation-delay: 300ms;
+  transform: translate3d(0, calc(100vw/12), 0);
+}
+#img-5by5-8.first,
+#img-5by5-8-clone.second {
+  animation-delay: 600ms;
+  transform: translate3d(0, 0, 0);
+}
+#img-5by5-8.second,
+#img-5by5-8-clone.first {
+  animation-delay: 900ms;
+  transform: translate3d(calc(-100vw/12), 0, 0);
+}
+#img-5by5-1.first,
+#img-5by5-1-clone.second {
+  animation-delay: 1200ms;
+  transform: translate3d(0, 0, 0);
+}
+#img-5by5-1.second,
+#img-5by5-1-clone.first {
+  animation-delay: 1500ms;
+  transform: translate3d(0, calc(-100vw/12), 0);
+}
+#img-5by5-23.first,
+#img-5by5-23-clone.second {
+  animation-delay: 1800ms;
+  transform: translate3d(0, 0, 0);
+}
+#img-5by5-23.second,
+#img-5by5-23-clone.first {
+  animation-delay: 2100ms;
+  transform: translate3d(0, calc(100vw/12), 0);
+}
+#img-5by5-5.first,
+#img-5by5-5-clone.second {
+  animation-delay: 2400ms;
+  transform: translate3d(0, 0, 0);
+}
+#img-5by5-5.second,
+#img-5by5-5-clone.first {
+  animation-delay: 2700ms;
+  transform: translate3d(0, calc(100vw/12), 0);
+}
+#img-5by5-19.first,
+#img-5by5-19-clone.second {
+  animation-delay: 3000ms;
+  transform: translate3d(0, 0, 0);
+}
+#img-5by5-19.second,
+#img-5by5-19-clone.first {
+  animation-delay: 3300ms;
+  transform: translate3d(calc(-100vw/12), 0, 0);
+}
+@keyframes slideTileOutDown {
+  0 {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, calc(100vw/12), 0);
+  }
+}
+.slideTileOutDown {
+  animation-name: slideTileOutDown;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+@keyframes slideTileInDown {
+  0 {
+    transform: translate3d(0, calc(-100vw/12), 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideTileInDown {
+  animation-name: slideTileInDown;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 300ms;
+}
+@keyframes slideTileOutRight {
+  0 {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(100vw/12), 0, 0);
+  }
+}
+.slideTileOutRight {
+  animation-name: slideTileOutRight;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+@keyframes slideTileInRight {
+  0 {
+    transform: translate3d(calc(-100vw/12), 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideTileInRight {
+  animation-name: slideTileInRight;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 300ms;
+}
+@keyframes slideTileOutLeft {
+  0 {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(100vw/12), 0, 0);
+  }
+}
+.slideTileOutLeft {
+  animation-name: slideTileOutLeft;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+@keyframes slideTileInLeft {
+  0 {
+    transform: translate3d(calc(-100vw/12), 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideTileInLeft {
+  animation-name: slideTileInLeft;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 300ms;
+}
+@keyframes slideTileOutUp {
+  0 {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, calc(-100vw/12), 0);
+  }
+}
+.slideTileOutUp {
+  animation-name: slideTileOutUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+@keyframes slideTileInUp {
+  0 {
+    transform: translate3d(0, calc(100vw/12), 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideTileInUp {
+  animation-name: slideTileInUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 300ms;
+}
+@keyframes fadeTooltipIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 60%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.fadeTooltipIn {
+  animation-name: fadeTooltipIn;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.33, 1.2);
+  animation-duration: 200ms;
+}
+@keyframes fadeMapIn {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeMapIn {
+  animation-name: fadeMapIn;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-duration: 1000ms;
+}
+.kite {
+  transform: translate3d(0, 0, 0) scale(0.7) rotate(45deg);
+}
+@keyframes rotateKites {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.7) rotate(45deg);
+  }
+  15% {
+    transform: translate3d(0, 0, 0) scale(0.7) rotate(30deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) scale(0.7) rotate(180deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(0.7) rotate(135deg);
+  }
+}
+.rotateKites {
+  opacity: 0.9;
+  animation-name: rotateKites;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1800ms;
+}
+.kite-img {
+  background-image: url('');
+  background-size: cover;
+  transform: scale(1.5) rotate(-135deg) translate3d(-40%, 0, 0); /* This line of code made the animation work without any jerks TOUCHWOOD */
+  opacity: 0;
+}
+@keyframes slideKiteImg {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) rotate(-135deg) translate3d(-40%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5) rotate(-135deg) translate3d(0, 0, 0);
+  }
+}
+.slideKiteImg {
+  animation-name: slideKiteImg;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-duration: 800ms;
+}
+/* =================================== */
+/* ==== Project Inside Animations ==== */
+/* =================================== */
+@keyframes slideProjectImageIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(-40%, 0, 0);
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideProjectImageIn {
+  opacity: 0;
+  transform: translate3d(-40%, 0, 0);
+  animation-name: slideProjectImageIn;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+  animation-delay: 200ms;
+}
+@keyframes fadeProjectImageOut {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeProjectImageOut {
+  opacity: 1;
+  animation-name: fadeProjectImageOut;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+/* =================================== */
+/* ==== Company Inside Animations ==== */
+/* =================================== */
+.company-inside-image {
+  transform: translate3d(100%, 0, 0);
+}
+@keyframes slideCompanyInsideImageIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(40%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideCompanyInsideImageIn {
+  animation-name: slideCompanyInsideImageIn;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+.company-inside-placeholder {
+  transform: translate3d(calc(200vw/12), 0, 0) scaleX(0.95);
+}
+@keyframes slideCompanyInsidePlaceholderIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(calc(200vw/12), 0, 0) scaleX(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scaleX(1);
+  }
+}
+.slideCompanyInsidePlaceholderIn {
+  animation-name: slideCompanyInsidePlaceholderIn;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.47, 1.15);
+  animation-duration: 800ms;
+}
+/* ==================================== */
+/* ==== Business Inside Animations ==== */
+/* ==================================== */
+@keyframes slideBusinessInsideImageIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(40%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideBusinessInsideImageIn {
+  opacity: 0;
+  animation-name: slideBusinessInsideImageIn;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+@keyframes businessPlaceholderAnim {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, calc(-200vw/12), 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.businessPlaceholderAnim {
+  opacity: 0;
+  animation-name: businessPlaceholderAnim;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  animation-duration: 500ms;
+}
+.business-placeholder,
+.business-image {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}

@@ -1,0 +1,474 @@
+   <html lang="en" class="ng-scope">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no, width=device-width, height=device-height">
+       <title>About Us | SilkValley</title>
+
+       <link rel="icon" type="image/png" href="../images/logo1.png" />
+       <script src="../code.jquery.com/jquery-3.3.1.min.js"></script>
+       <link rel="stylesheet" href="../cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+       <script src="../cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+       <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="../css/bootstrap.min_v4.1.3.css">
+       <link href="../css/nanoscroller.css" rel="stylesheet" media="all">
+       <link href="../css/basic.css" type="text/css" rel="stylesheet">
+       <link href="../css/animate.css" type="text/css" rel="stylesheet">
+       <link href="../css/w1261.css" type="text/css" rel="stylesheet">
+       <link href="../css/theme.css" type="text/css" rel="stylesheet">
+       <link href="../css/calibri.css" type="text/css" rel="stylesheet">
+       <link href="../css/responsive.css" type="text/css" rel="stylesheet">
+
+
+       <style type="text/css">
+           .site_menu ul li {
+               display: inline-block;
+           }
+       </style>
+
+
+       <script src="../js/jquery-3.0.0.min.js"></script>
+       <script src="../js/bootstrap.min.js"></script>
+       <script type="text/javascript" src="../js/scripts.js"></script>
+       <script type="text/javascript" src="../js/slider.js"></script>
+
+
+       <script type="text/javascript">
+           var base = "index.html";
+           var totalBanner = "5";
+       </script>
+
+
+   </head>
+
+   <body class="w-100p h-100p fs-0" style="opacity: 1; background: rgb(189, 197, 207); transition: opacity 200ms ease 0s;">
+       <div id="body-content" class="w-100p h-100p ng-scope">
+           <div id="header" class="w12col cf z-99 pos-r ng-scope bdb-gray3">
+
+               <span id="logo" class="fl-l w1col h1col cur-p d-f flex-col justify-content-c align-items-c op-0 animateBigText" style="border-right: none;padding-left: 20px;">
+                                   <a href="index.html"> <img id="logo-img" src="../images/LogoMakr.png" alt=""></a>
+               </span>
+
+               <span class="header_slogan fl-l w4col h1col welcome fz-7 c-white pl-20 d-f flex-col justify-content-c op-0 fadeIn-dur600" style="border-right: none;">Welcome to<br>The SilkValley<br>Group</span>
+               <div class="site_menu">
+                   <a href="index.html">
+                       <span id="about-tab" class="fl-l w1col h1col nav fz-8 c-white op-0 fadeIn-dur600" style=" border-right: 1px solid rgb(200, 205, 212);">Home</span>
+                   </a>
+                   <a class="active" href="about.html">
+                       <span id="about-tab" class="fl-l w1col h1col nav fz-8 c-white op-0 fadeIn-dur600" style=" border-right: 1px solid rgb(200, 205, 212);">About</span>
+                   </a>
+                   <a href="people.html">
+                       <span id="people-tab" class="fl-l w1col h1col nav fz-8 c-white op-0 fadeIn-dur600" style="border-right: 1px solid rgb(200, 205, 212);">Who We Are</span>
+                   </a>
+                   <a href="businesses.html">
+                       <span id="business-tab" class="fl-l w1col h1col nav fz-8 c-white op-0 fadeIn-dur600" style="border-right: 1px solid rgb(200, 205, 212);">Businesses</span>
+                   </a>
+                   <!--                <a  href="">
+                    <span id="company-tab" class="fl-l w1col h1col nav fz-8 c-white op-0 fadeIn-dur600" style="border-right: 1px solid rgb(200, 205, 212);">companies</span>
+                </a>-->
+                   <a href="#">
+                       <span id="impact-tab" class="fl-l w1col h1col nav fz-8 c-white op-0 fadeIn-dur600" style="border-right: 1px solid rgb(200, 205, 212);">Update</span>
+                   </a>
+                   <a href="#">
+                       <span id="contact-tab" class="fl-l w1col h1col nav fz-8 c-white op-0 fadeIn-dur600" style="border-right: 1px solid rgb(200, 205, 212);">Contact</span>
+                   </a>
+               </div>
+           </div>
+
+           <div class="mobile_menu">
+               <span class="mob_menu"><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i></span>
+
+           </div>
+           <div class="mob_menu_list_wrapper">
+               <ul class="mob_menu_list">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="people.html">Who We Are</a></li>
+                   <li><a href="businesses.html">Businesses</a></li>
+                   <li><a href="media.html">Update</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </div>
+
+           <script src="../js/jquery.cycle2.js"></script>
+           <script src="../js/jquery.cycle2.shuffle.js"></script>
+
+           <script src="https://maps.googleapis.com/maps/api/js?v=3.11&amp;sensor=false" type="text/javascript"></script>
+           <script type="text/javascript">
+               // check DOM Ready
+               $(document).ready(function() {
+                   // execute
+                   (function() {
+                       // map options
+                       var options = {
+                           zoom: 5,
+                           center: new google.maps.LatLng(-25.274398, 133.775136), // centered US
+                           mapTypeId: google.maps.MapTypeId.TERRAIN,
+                           mapTypeControl: false
+                       };
+
+                       // init map
+                       var map = new google.maps.Map(document.getElementById('map_canvas'), options);
+
+                       // NY and CA sample Lat / Lng
+                       var southWest = new google.maps.LatLng(-35.280937, 149.130009);
+                       var northEast = new google.maps.LatLng(-23.698042, 133.880747);
+                       var lngSpan = northEast.lng() - southWest.lng();
+                       var latSpan = northEast.lat() - southWest.lat();
+
+                       // set multiple marker
+                       for (var i = 0; i < 8; i++) {
+                           // init markers
+                           var marker = new google.maps.Marker({
+                               position: new google.maps.LatLng(southWest.lat() + latSpan * Math.random(), southWest.lng() + lngSpan * Math.random()),
+                               map: map,
+                               title: 'Click Me ' + i
+                           });
+
+                           // process multiple info windows
+                           (function(marker, i) {
+                               // add click event
+                               google.maps.event.addListener(marker, 'click', function() {
+                                   infowindow = new google.maps.InfoWindow({
+                                       content: 'Silk Valley'
+                                   });
+                                   infowindow.open(map, marker);
+                               });
+                           })(marker, i);
+                       }
+                   })();
+               });
+           </script>
+
+           <div id="content" class=" ng-scope" style="">
+               <section id="about-section1" class="s1 pl1col pb1by2col cf pos-r mob_section">
+                   <div class="pos-a h-100p t-0">
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                       <span class="about-section1-line fl-l w1col h-100p"></span>
+                   </div>
+                   <div class="fl-l w5col pr2col mob_w_100 mob_pad_15 mob_margin">
+                       <h1 class="d-b pt1col fz-1 c-blue0 big-text animateBigText">About SilkValley</h1>
+                       <span class="d-b pt1by3col fz-2 c-white small-text del50 animateSmallText mob_text_justify">
+                           The knit and silk business house of SilkValley is one of the pioneers in establishing garments revolution in Bangladesh. Today it is a role model for the nation in the field of combining various sectors, such us IT, manufacturing, trading and service to attain synergistic growth through expansion and diversification. </span>
+                   </div>
+                   <ul id="kites" class="fl-l w4col mt1by3col cf ls-n mob_about_section">
+                       <li class="kite fl-l w2col h2col pos-r op-0 trf-o-br del100 rotateKites">
+                           <span class="kite-bg1 pos-a l-0 t-0 ov-h bgr-1">
+                               <div class="kite-img w-100p h-100p slideKiteImg" style="background-image:url(../images/silkabout1.jpg); background-size: cover;"></div>
+                           </span>
+                       </li>
+                       <li class="kite fl-l w2col h2col pos-r op-0 trf-o-bl del200 rotateKites">
+                           <span class="kite-bg2 pos-a r-0 t-0 ov-h bgr-2">
+                               <div class="kite-img w-100p h-100p slideKiteImg" style="background-image:url(../images/silkabout2.jpg); background-size: cover;"></div>
+                           </span>
+                       </li>
+                       <li class="kite fl-l w2col h2col pos-r op-0 trf-o-tr del300 rotateKites">
+                           <span class="kite-bg3 pos-a l-0 b-0 ov-h bgr-3">
+                               <div class="kite-img w-100p h-100p slideKiteImg" style="background-image:url(../images/silkabout3.jpg); background-size: cover;"></div>
+                           </span>
+                       </li>
+                       <li class="kite fl-l w2col h2col pos-r op-0 trf-o-tl del400 rotateKites">
+                           <span class="kite-bg4 pos-a r-0 b-0 ov-h bgr-4">
+                               <div class="kite-img w-100p h-100p slideKiteImg" style="background-image:url(../images/silkabout4.jpg); background-size: cover;"></div>
+                           </span>
+                       </li>
+                   </ul>
+               </section>
+               <section id="about-section2" class="s2 pb1by2col pt3by4col pl1col cf bgc-white pos-r abt-facts mob_pad_15 mob_mission_vission">
+                   <div class="pos-a h-100p t-0">
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                       <span class="about-section2-line fl-l w1col h-100p"></span>
+                   </div>
+                   <p class="fl-l w3col fz-1 c-blue0 text-gs no-edge-anim mob_w_100 mob_no_mar_right mob_no_pad_right"><span class="txt-max">The Essence of SilkValley is a statement of our unwavering credo as an organization.</span></p>
+                   <p class="fl-l w4col pr1col fz-8 c-gray1 del50 no-edge-anim mob_w_100 mob_no_mar_right mob_no_pad_right" style="text-align: justify;">We are well-diversified business house, with clients in over 30 countries, delivering complex and challenging projects for several years, We operate in 10 major business areas with over 15 group companies and a strong employee base of over 500 people from different nationalities. Above all, we are committed to delivering projects and solutions globally with the help of breakthrough technology that will leave an impact for generation to come.
+
+                   </p>
+                   <p class="fl-l del50 no-edge-anim mission_vission_wrapper">
+                       <span class="d-b fz-5 c-blue">Mission</span>
+                       <span class="d-b fz-9 c-gray1 mt-20 maw3by4col txt1col mission_vission_text" style="text-align: justify;">
+                           To prosper together with customers, shareholders, and employees, and to contribute to a prosperous society.
+                       </span>
+                   </p>
+                   <p class="fl-l del50 no-edge-anim mission_vission_wrapper">
+                       <span class="d-b fz-5 c-blue">Vision</span>
+                       <span class="d-b fz-9 c-gray1 mt-20 maw3by4col txt1col mission_vission_text" style="text-align: justify;">
+                           To deliver customer satisfaction with creativity, innovation, sincerity, and gratitude, and to act in compliance. </span>
+                   </p>
+               </section>
+               <section id="about-section3" class=" about_img_sfl_container s3 h5col pl1col pr1col w-100vw ng-scope about_img_slider mob_w_h_100 mob_pad_15">
+                   <p class="fl-l pt3by4col w4col about_timeline_section mob_w_100">
+                       <span class="d-b fz-1 c-white pt1by3col no-edge-anim">Fortifying Australain infrastructure for ongoing.</span>
+                       <span class="d-b fz-2 c-white pt1by3col del50 no-edge-anim">Discover some of our landmark projects by accessing the interactive timeline to know how we've contributed to society since 2019.</span>
+
+                   </p>
+                   <div id="about-5by5" class=" about_img_sfl cf fl-r w5col h5col cur-p d-f flex-col mob_card_slider mob_w_h_100 ">
+                       <div class="about_album_list">
+                           <ul>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=4500>
+                                       <img src="../images/exp/03.jpg" alt="" title="" />
+                                       <img src="../images/exp/01.jpg" alt="" title="" />
+                                       <img src="../images/exp/08.jpg" alt="" title="" />
+                                       <img src="../images/exp/09.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=5000>
+                                       <img src="../images/exp/10.jpg" alt="" title="" />
+                                       <img src="../images/exp/11.jpg" alt="" title="" />
+                                       <img src="../images/exp/12.jpg" alt="" title="" />
+                                       <img src="../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <a href="#"><img src="../images/exp/03.jpg" alt="" title="" /></a>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=4000>
+                                       <img src="../images/exp/06.jpg" alt="" title="" />
+                                       <img src="../images/exp/07.jpg" alt="" title="" />
+                                       <img src="../images/exp/08.jpg" alt="" title="" />
+                                       <img src="../images/exp/09.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <a href="#"><img src="../images/exp/05.jpg" alt="" title="" /></a>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=3100>
+                                       <img src="../images/exp/16.jpg" alt="" title="" />
+                                       <img src="../images/exp/15.jpg" alt="" title="" />
+                                       <img src="../images/exp/14.jpg" alt="" title="" />
+                                       <img src="../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <a href="#"><img src="../images/exp/07.jpg" alt="" title="" /></a>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <a href="#"><img src="../images/exp/08.jpg" alt="" title="" /></a>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=2500>
+                                       <img src="../images/exp/06.jpg" alt="" title="" />
+                                       <img src="../images/exp/07.jpg" alt="" title="" />
+                                       <img src="../images/exp/01.jpg" alt="" title="" />
+                                       <img src="../images/exp/02.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <a href="#"><img src="../images/exp/10.jpg" alt="" title="" /></a>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=1200>
+                                       <img src="../images/exp/16.jpg" alt="" title="" />
+                                       <img src="../images/exp/15.jpg" alt="" title="" />
+                                       <img src="../images/exp/14.jpg" alt="" title="" />
+                                       <img src="../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=2800>
+                                       <img src="../images/exp/06.jpg" alt="" title="" />
+                                       <img src="../images/exp/15.jpg" alt="" title="" />
+                                       <img src="../images/exp/14.jpg" alt="" title="" />
+                                       <img src="../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <a href="#"><img src="../images/exp/13.jpg" alt="" title="" /></a>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=3200>
+                                       <img src="../images/exp/16.jpg" alt="" title="" />
+                                       <img src="../images/exp/15.jpg" alt="" title="" />
+                                       <img src="../images/exp/14.jpg" alt="" title="" />
+                                       <img src="../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=3500>
+                                       <img src="../images/exp/15.jpg" alt="" title="" />
+                                       <img src="../images/exp/14.jpg" alt="" title="" />
+                                       <img src="../images/exp/16.jpg" alt="" title="" />
+                                       <img src="../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=3500>
+                                       <img src="../images/exp/15.jpg" alt="" title="" />
+                                       <img src="../images/exp/14.jpg" alt="" title="" />
+                                       <img src="../images/exp/16.jpg" alt="" title="" />
+                                       <img src="../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=4500>
+                                       <img src="../images/exp/03.jpg" alt="" title="" />
+                                       <img src="../images/exp/01.jpg" alt="" title="" />
+                                       <img src="../images/exp/08.jpg" alt="" title="" />
+                                       <img src="../images/exp/09.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=5000>
+                                       <img src="../images/exp/10.jpg" alt="" title="" />
+                                       <img src="../images/exp/11.jpg" alt="" title="" />
+                                       <img src="../images/exp/12.jpg" alt="" title="" />
+                                       <img src="a../images/exp/13.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                               <li class=" wow fadeInUp" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <a href="#"><img src="../images/exp/03.jpg" alt="" title="" /></a>
+                               </li>
+                               <li class=" wow fadeInDown" data-wow-duration="0.8" data-wow-delay="0.8">
+                                   <div class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-timeout=4000>
+                                       <img src="../images/exp/06.jpg" alt="" title="" />
+                                       <img src="../images/exp/07.jpg" alt="" title="" />
+                                       <img src="../images/exp/08.jpg" alt="" title="" />
+                                       <img src="../images/exp/09.jpg" alt="" title="" />
+                                   </div>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </section>
+               <div class="gmap_wrapper">
+                   <div id="map_canvas" style="width: 100%; height:500; margin-top: 0px"></div>
+               </div>
+               <section id="about-section5" class="s5 pt1col pb3by4col pl1col bgc-gray1op10 pos-r cf ng-scope mob_pad_15 mob_about_cr_img_section">
+                   <div class="pos-a h-100p t-0">
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                       <span class="about-section5-line fl-l w1col h-100p"></span>
+                   </div>
+                   <p class="fl-l w4col pr1col mob_w_100 mob_no_pad_right">
+                       <span class="d-b fz-1 c-white no-edge-anim">Collaborating to<br>co-create the future</span>
+                       <span class="d-b fz-2 c-white pt1by3col del50 no-edge-anim">With a rich legacy of many years of impeccable technology behind us, we invite motivated and talented individuals to collaborate with us and together drive forward in the next 10 years.</span>
+                       <span style="height:20px;line-height:20px" class="d-b fz-4 c-white tt-u mt1by3col cur-p small-text del50 no-edge-anim">TAKE A LOOK INTO LIFE AT SP<img visible-on-load="" style="width: auto; height: 8px; margin-left: 6px; opacity: 1; transition: opacity 400ms ease 0s;" source="http://doreen.com/assets/frontend/images/explore-timeline-arrow.svg" class="ng-isolate-scope" src="../images/explore-timeline-arrow.html"></span>
+                   </p>
+                   <div id="circles" class="fl-l w6col h2col pos-r mob_w_100">
+                       <div class="circle-div pos-a l-0 ov-h mob_about_cr_img" style=" border-radius: 0px !important">
+                           <img class="about_member circle-img w-100p h-100p ofit-cover opos-center ng-isolate-scope" src="../images/silkfutre1.jpg" style="opacity: 1; transition: opacity 400ms ease 0s;">
+                       </div>
+                       <div class="circle-div pos-a r-0 ov-h mob_about_cr_img" style=" border-radius: 0px !important">
+                           <img class="about_member circle-img w-100p h-100p ofit-cover opos-center ng-isolate-scope" src="../images/silkfutre2.jpg" style="opacity: 1; transition: opacity 400ms ease 0s;">
+                       </div>
+                       <div class="circle-div pos-a l-50p trf-tx-minus50p ov-h mob_about_cr_img" style=" border-radius: 0px !important">
+                           <img class="about_member circle-img w-100p h-100p ofit-cover opos-center ng-isolate-scope" src="../images/silkfutre3.jpg" style="opacity: 1; transition: opacity 400ms ease 0s;">
+                       </div>
+                   </div>
+               </section>
+           </div>
+           <div id="footer" class="pt3by4col  pb3by4col pb2col pl1col bgc-gray1 cf pos-r">
+               <div class="fl-l">
+                   <p class="fz-4 c-gray2 lh-1 cur-p">BUSINESSES</p>
+
+
+                   <ul class="ls-n cf fz-10 pt-30">
+                       <li id="ft-businesses" class="fl-l w1plus20col ov-h"> <a class="cur-p d-b" href="index.html" target="_blank">
+                               <p class="c-gray2">Silk & Knit</p>
+                           </a>
+                           <a class="cur-p d-b" href="index.html" target="_blank">
+                               <p class="c-gray2">Textiles & Apparels</p>
+                           </a>
+                           <a class="cur-p d-b" href="index.html" target="_blank">
+                               <p class="c-gray2">Engineering & Construction</p>
+                           </a>
+                       </li>
+                       <li class="fl-l ml-45 w1plus20col ov-h"> <a class="cur-p d-b" href="development" target="_blank">
+                               <p class="c-gray2">Real Estate</p>
+                           </a>
+                           <a class="cur-p d-b" href="cement/index.html" target="_blank">
+                               <p class="c-gray2">IT</p>
+                           </a>
+                           <a class="cur-p d-b" href="power/index.html" target="_blank">
+                               <p class="c-gray2">Power Generation</p>
+                           </a>
+                       </li>
+                       <li class="fl-l ml-45 w1plus20col ov-h"> <a class="cur-p d-b" href="index.html" target="_blank">
+                               <p class="c-gray2">Velours Rouge</p>
+                           </a>
+                           <a class="cur-p d-b" href="index.html" target="_blank">
+                               <p class="c-gray2">Hotels and Resorts</p>
+                           </a>
+                           <a class="cur-p d-b" href="index.html" target="_blank">
+                               <p class="c-gray2">Management services</p>
+                           </a>
+                       </li>
+                   </ul>
+
+
+
+                   <p class="fz-11 c-gray2 lh-1 pt1by2col">©2018 <a href="index.html">Silk Valley GROUP</a> |
+                       <a href="contact.html">
+                           <span class="cur-p">CONTACT</span>
+                       </a>
+                   </p>
+                   <p class="fz-12 c-gray2 pt-20 w4col" Since our inception in 1865, we have been committed to creating structures and providing solutions that have a lasting impact on society, using what we know best: engineering. We firmly believe that smart engineering can bring the world closer and make this planet a better place to live in.></p>
+               </div>
+               <div class="pos-a r1col w5col d-f flex-col align-items-c" style="pointer-events:none">
+                   <p class="fz-13 c-gray2">Engineering a better planet</p>
+                   <img class="w4col h-a pt1by2col" src="../images/map.png">
+               </div>
+           </div>
+       </div>
+       <script>
+           jQuery(document).ready(function() {
+               $(".mob_menu").click(function() {
+                   $(this).toggleClass("highlight");
+                   $('.mob_menu_list_wrapper').toggleClass("highlight_open");
+               });
+           });
+
+
+           jQuery(document).ready(function() {
+               $(window).scroll(function() {
+                   var sticky = $('#header'),
+                       scroll = $(window).scrollTop();
+
+                   if (scroll >= 100)
+                       sticky.addClass('fixed');
+                   else
+                       sticky.removeClass('fixed');
+               });
+           });
+       </script>
+
+
+       <script type="text/javascript" src="../js/slider.js"></script>
+       <script type="text/javascript">
+           $(document).ready(function() {
+               $('#projectDetails').on('show.bs.modal', function(e) {
+                   $(this).find('.modal-content').load(e.relatedTarget.href);
+               });
+           });
+       </script>
+
+
+   </body>
+
+   </html>
